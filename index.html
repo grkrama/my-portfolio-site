@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright|Montserrat|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+</head>
+<body>
+    <div class='container-cx'>
+        <header class='header-cx'>
+                <div class='hd-logo-cx'>
+                        <img src='img/img_optimize/logo-img-150-sm.png' alt='Company Logo Image'/>
+                </div>
+                <div class='hd-txt-cx'>
+                        <div class='hd-main-txt-cx'>
+                                <h2>KARTHIK Ramachandran</h2>
+                        </div>
+                        <div class='hd-sub-txt-cx'>
+                                <h4>FRONT-END DEVELOPER</h4>
+                        </div>
+                </div>
+        </header>
+        <nav class='navbar-cx'>
+                <div>
+                        <a class="menu-btn" id="menu"><i class="fas fa-bars"></i></a>
+                </div>
+                <div class="navbar-item-grp" id="navbar-item-drawer">
+                        <ul class="nav-list">
+                                <li class="nav-item"><a href="#">Home</a></li>
+                                <li class="nav-item"><a href="#article">About Us</a></li>
+                                <li class="nav-item"><a href="#works">Featured Works</a></li>
+                                <li class="nav-item"><a href="#footer">Contact</a></li>
+                        </ul>
+                </div>
+        </nav>
+        <section class='section-cx'>
+                <div class='img-text'>Think Positive</div>
+                <picture>
+                        <source media="(min-width: 1000px)" srcset="img/img_optimize/header-banner-img-1300lg.jpg">
+                        <source media="(min-width: 700px)" srcset="img/img_optimize/header-banner-img-800me.jpg 800w">
+                        <source media="(min-width: 500px)" srcset="img/img_optimize/header-banner-img-400sm.jpg 400w">
+                        <img src="img/img_optimize/header-banner-img-400sm.jpg" alt="header">
+                </picture>
+                <h1 class='sub-heading'>Featured Works</h1>
+                <div class='works-cx' id='works'>
+                        <div class='featured-work-cx'>
+                                <figure>
+                                        <img src="img/img_optimize/hardware-img-1200lg.jpg"
+                                        srcset="img/img_optimize/hardware-img-1200lg.jpg 1200w,
+                                                img/img_optimize/hardware-img-800me.jpg 700w,
+                                                img/img_optimize/hardware-img-400sm.jpg 500w,
+                                                img/img_optimize/hardware-img-200x-sm.jpg 200w"
+                                        alt="hardware image">
+                                        <figcaption><em>Hardware Image</em></figcaption>
+                                        <h5 class='fig-sub-heading'>www.ibm.com</h5>
+                                </figure>
+                        </div>
+                        <div class='featured-work-cx'>
+                                <figure>
+                                        <img src="img/img_optimize/programming-img-1200lg.jpg"
+                                        srcset="img/img_optimize/programming-img-1200lg.jpg 1200w,
+                                                img/img_optimize/programming-img-800me.jpg 700w,
+                                                img/img_optimize/programming-img-400sm.jpg 500w,
+                                                img/img_optimize/programming-img-200x-sm.jpg 200w"
+                                        alt="programming image">
+                                        <figcaption><em>Programming Image</em></figcaption>
+                                        <h5 class='fig-sub-heading'>www.google.com</h5>
+                                </figure>
+                        </div>
+                        <div class='featured-work-cx'>
+                                 <figure>
+                                        <img src="img/img_optimize/database-img-1200lg.jpg"
+                                        srcset="img/img_optimize/database-img-1200lg.jpg 1200w,
+                                                img/img_optimize/database-img-800me.jpg 700w,
+                                                img/img_optimize/database-img-400sm.jpg 500w,
+                                                img/img_optimize/database-img-200x-sm.jpg 200w"
+                                        alt="database image">
+                                        <figcaption><em>Database Image</em></figcaption>
+                                        <h5 class='fig-sub-heading'>www.oracle.com</h5>
+                                </figure>
+                        </div>
+                </div>
+        </section>
+        <article class='article-cx' id='article'>
+                <h1 class='sub-heading'>About Us</h1>
+                <p>Computer programming is the process of designing and building an executable computer program for accomplishing a specific computing task. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding). The source code of a program is written in one or more programming languages. The purpose of programming is to find a sequence of instructions that will automate the performance of a task for solving a given problem. The process of programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.</p>
+                <p>Related programming tasks include testing, debugging, maintaining a program's source code, implementation of build systems, and management of derived artifacts such as machine code of computer programs. These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation, or coding reserved for the actual writing of source code. Software engineering combines engineering techniques with software development practices.</p>
+        </article>
+        <footer class='footer-cx' id='footer'>
+                <ul class="footer-list">
+                        <li class="footer-item"><a href="https://github.com/" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        <li class="footer-item"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="footer-item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="footer-item"><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

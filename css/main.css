@@ -1,0 +1,324 @@
+body {
+    font: normal 1em/1.2 "Arial", sans-serif;
+    /* margin: 5px 10px; */
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+/*Complete Web Page*/
+/*Using Grid Layout for example*/
+.container-cx{
+    grid-template:
+        "header" 150px
+        "nav" 35px
+        "section" auto
+        "article" auto
+        "footer" 71px;
+    display: grid;
+    grid-row-gap: 1.3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*header section*/
+.header-cx{
+    grid-area: header;
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border-bottom: solid #777 thick;
+}
+
+
+.hd-txt-cx{
+    text-align: right;
+    color: #777;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.hd-main-txt-cx{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.hd-sub-txt-cx{
+    line-height: 0;
+}
+
+
+/*Naviation links*/
+.navbar-cx{
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.nav-item{
+    display: inline-block;
+}
+
+
+.nav-item a{
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.nav-item a:hover {
+    text-decoration: underline;
+    color:#000;
+}
+
+
+.navbar-item-grp {
+    flex: 1;
+}
+
+
+.menu-btn{
+    visibility: hidden;
+}
+
+
+/*Sections*/
+.section-cx{
+    grid-area: section;
+}
+
+
+.section-cx picture > img {
+    max-width: 100%
+}
+
+
+.img-text{
+    position: absolute;
+    color: white;
+    font: normal bold 70px/1 "Cormorant Upright", serif;
+    left: 200px;
+    top: 300px;
+    transition: font-size .5s ease;
+    transition: left .5s ease;
+}
+
+
+.works-cx{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+
+.featured-work-cx figure{
+ margin: 0;
+ text-align: center;
+}
+
+
+.featured-work-cx figure img{
+    max-width: 100%;
+}
+
+
+.featured-work-cx:nth-child(even){
+    margin: 0 .5em;
+}
+
+
+.sub-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+
+.fig-sub-heading{
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 0;
+}
+
+
+.article-cx{
+    grid-area: article;
+    border-radius: 10px;
+    padding: 10px;
+    border: medium outset #ddd;
+}
+
+
+.article-cx p {
+font: normal normal 1.2em/2 "Open Sans Condensed", sans-serif;;
+text-align: justify;
+}
+
+
+/*Footer*/
+.footer-cx{
+    grid-area: footer;
+    border-top: solid #777 thin;
+    background-color: #eee;
+}
+
+
+.footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.footer-item{
+    display: inline-block;
+}
+
+
+.footer-item a{
+    text-decoration: none;
+    color:#000;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/*media query style*/
+@media screen and (max-width: 800px){
+    .sub-heading {
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    .footer-item a{
+        font-size: 1.5em;
+    }
+
+    .featured-work-cx figure figcaption em{
+        font-size: .75em;
+    }
+
+    .hd-main-txt-cx h2{
+        font-size: 1em;
+    }
+
+    .hd-sub-txt-cx h4{
+        font-size: .75em;
+    }
+
+    .nav-item a {
+        font-size: 13px;
+    }
+
+    .article-cx p {
+        font: normal normal 1em/1.5 "open sans condensed";
+    }
+
+    .img-text{
+        font: normal bold 50px/1 "Cormorant Upright", serif;
+        left: 60px;
+        transition: font-size .5s ease;
+        transition: left .5s ease;
+    }
+}
+
+/*media query style*/
+@media screen and (max-width: 500px){
+    .header-cx{
+        line-height: 0;
+        grid-template-columns: 1fr;
+        border-bottom: solid #777 thin;
+    }
+
+    .hd-logo-cx{
+        text-align: center;
+    }
+
+    .hd-logo-cx img{
+        width: 20%;
+    }
+
+    .hd-txt-cx{
+        text-align: center;
+    }
+
+    .hd-sub-txt-cx{
+        padding-top: 5px;
+    }
+
+    .menu-btn{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .works-cx{
+        flex-wrap: wrap;
+    }
+
+    .featured-work-cx{
+        margin: 0 1em !important;
+    }
+
+    .nav-item{
+        padding: 10px;
+        border-bottom: solid #eee thin;
+    }
+
+    .navbar-item-grp {
+        width: 400px;
+        position: absolute;
+        -webkit-transform: translate(-400px, 0);
+        transform: translate(-400px, 0);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .navbar-item-grp.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav-list{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background: white;
+    }
+
+    .article-cx{
+        border: thin solid #ddd;
+    }
+
+    .img-text{
+        font: normal bold 20px/1 "Cormorant Upright", serif;
+        left: 40px;
+        transition: font-size .5s ease;
+        transition: left .5s ease;
+    }
+
+    .sub-heading {
+        font-size: 1em;
+        font-weight: 200;
+    }
+}
