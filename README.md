@@ -2,12 +2,14 @@
 
 Site developed for Udacity Front End Project Submission.
 
+[![N|Solid](http://jigsaw.w3.org/css-validator/images/vcss)](https://github.com/grkrama/my-portfolio-site/blob/master/css/main.css)
+
 ### Installation
 
 Clone the Github Repository.
 
 ```sh
-$ git clone https://
+$ git clone https://github.com/grkrama/my-portfolio-site.git
 $ cd project1-portfolio-site
 ```
 ### Open Site
