@@ -4,6 +4,11 @@ Site developed for Udacity Front End Project Submission.
 
 [![N|Solid](http://jigsaw.w3.org/css-validator/images/vcss)](https://github.com/grkrama/my-portfolio-site/blob/master/css/main.css)
 
+### What is used?
+
+HTML - Basic HTML / Picture Element / Figure (responsive images)
+CSS - CSS Grid / Flexbox / Basic css
+
 ### Installation
 
 Clone the Github Repository.
